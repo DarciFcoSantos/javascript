@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> <!-- Cabeça: Configuração -->
+    <meta charset="UTF-8"> <!-- Conf. de caracteres, acentuação, etc -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title> <!-- Titulo arquivo -->
+    <style>
+        body {
+            background-color: rgba(0, 0, 255, 0.603);
+            /** Cor de  fundo */
+            color: white;
+            /* Cor da letra */
+            font: normal 20pt arial;
+            /* Fonte */
+        }
+
+        h1 {
+            color: rgb(225, 212, 22)
+        }
+    </style>
+</head>
+
+<body> <!-- Corpo -->
+    <h1>Darci</h1>
+    <p>teste</p>
+
+    <script> // Programa JS
+        var n1 = Number(window.prompt('Digite um número: ')) // String
+        var n2 = Number(window.prompt('Digite outro número: ')) //String
+        var s = n1 + n2
+        /* 3º maneira usando o template string */
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+
+        /* 2º maneira -> usando o: */
+        //String(s) ou s.ToString()
+        //window.alert('a soma dos valores é ' + String(s))
+
+        /* 1º maneira -> */
+        //window.alert('A soma do valores é ' + s)
+
+        // (number + number) para adição
+        // (string + string) para concatenação
+        // Para numero INTEIRO usa Number.parseInt(n)
+        // Para numero REAL usa Number.parseFloat(n)
+    </script>
+</body>
+
+</html>
